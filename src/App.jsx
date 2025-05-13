@@ -1,6 +1,7 @@
 
 import './App.css'
 import ChipsInput from './Project/ChipsInput'
+import OTP_input from './Project/OTP_input'
 import TodoList from './Project/TodoList'
 
 function App() {
@@ -8,7 +9,7 @@ function App() {
   return (
     <>
       <div>
-        <ChipsInput/>
+        <OTP_input/>
       </div>
     </>
   )
