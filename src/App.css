@@ -14,3 +14,10 @@ padding: 5px 10px;
   cursor: pointer;
   color: red;
 }
+.search{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid black;
+  width: 200px;
+  max-height: max-content;
+}
