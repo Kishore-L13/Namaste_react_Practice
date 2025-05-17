@@ -20,6 +20,7 @@ padding: 5px 10px;
   border: 1px solid black;
   width: 200px;
   max-height: max-content;
+  overflow: scroll;
 }
 .search-api{
   display: flex;
@@ -27,4 +28,5 @@ padding: 5px 10px;
   border: 1px solid black;
   width: 200px;
   max-height: max-content;
+  overflow: inherit;
 }
