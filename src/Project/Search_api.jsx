@@ -16,11 +16,11 @@ const Api_data = async() =>{
     const response =  await fetch('https://dummyjson.com/recipes')
     const data = await response.json()
     console.log(data)
-    setSearch(data?.recipes?.name)
+      setSearch(data?.recipes);
 }
   return (
     
-        <div>
+        <div className='search-api'>
         <input type='text' placeholder='Enter the recipes'
         value={input} onChange={(e)=>setInput(e.target.value)}
         />
