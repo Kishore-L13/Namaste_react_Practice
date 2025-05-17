@@ -22,7 +22,7 @@ const Api_data = async() =>{
   }
     const response =  await fetch('https://dummyjson.com/recipes/search?q='+input)
     const data = await response.json()
-    console.log(data)
+    //console.log(data)
       setSearch(data?.recipes);
       setCache(prev => ({...prev, [input]:data?.recipes}))
 }

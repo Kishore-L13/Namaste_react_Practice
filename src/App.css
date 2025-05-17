@@ -29,4 +29,6 @@ padding: 5px 10px;
   width: 200px;
   max-height: max-content;
   overflow: inherit;
+  padding: 5px;
+  margin: 5px;
 }
