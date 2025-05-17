@@ -3,14 +3,7 @@ import React, { useEffect, useState } from 'react'
 const Search_api = () => {
     const [input , setInput] = useState('')
     const [search,setSearch] = useState([])
-const handlekeypress = (event) => {
- if (event.key === "Enter" && input.trim()!==""){
-    const item = {
-        label: input.trim()
-    }
-    setSearch(prev=>[...prev,item]);
-    setInput("")
-}}
+
 useEffect(()=>{
     const timer = setTimeout(()=>{
       Api_data()
@@ -22,7 +15,8 @@ return () => {
 const Api_data = async() =>{
     const response =  await fetch('https://dummyjson.com/recipes')
     const data = await response.json()
-    //console.log(data)
+    console.log(data)
+    setSearch(recipes?.name)
 }
   return (
     
@@ -31,9 +25,9 @@ const Api_data = async() =>{
         onKeyDown={handlekeypress}
         value={input} onChange={(e)=>setInput(e.target.value)}
         />
-     {input.map(item => (
+      {search.map(item => (
         <span>{item}</span>
-     ))}
+     ))} 
     </div>
   )
 }
