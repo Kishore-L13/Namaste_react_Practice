@@ -8,7 +8,7 @@ const CheckEvenorOdd = () => {
    
     setLoading(true)
     setResult(null)
-  setTimeout =(()=>  {const number = parseInt(input,10)
+  setTimeout(()=>  {const number = parseInt(input,10)
     if (isNaN(number)){
         setResult("please enter valied number")
     }else {
