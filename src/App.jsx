@@ -1,12 +1,12 @@
 
 import './App.css'
-import TogglePassword from './Project/TogglePassword'
+import ToggleNav from './Project/ToggleNav'
 function App() {
 
   return (
     <>
       <div>
-        <TogglePassword/>
+        <ToggleNav/>
       </div>
     </>
   )
