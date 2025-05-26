@@ -1,6 +1,7 @@
 
 import './App.css'
 import CheckEvenorOdd from './Project/CheckEvenorOdd'
+import CounterApp from './Project/CounterApp'
 import ToggleNav from './Project/ToggleNav'
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
       <div>
         <CheckEvenorOdd/>
+        <CounterApp/>
       </div>
     </>
   )
