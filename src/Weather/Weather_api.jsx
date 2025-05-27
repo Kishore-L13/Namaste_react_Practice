@@ -1,55 +1,55 @@
-import React, { useState } from 'react';
-const w = [
-  { name: 'London', temp: '32C', Day: 'Sunny' },
-  { name: 'India', temp: '30C', Day: 'Cloudy' },
-  { name: 'USA', temp: '25C', Day: 'Rainy' },
-  { name: 'Dubai', temp: '40C', Day: 'Hot' }
-];
+import React, { useEffect, useState } from 'react';
+import { Weather_data } from '../../utils/Weather_data';
+// const w = [
+//   { name: 'London', temp: '32C', Day: 'Sunny' },
+//   { name: 'India', temp: '30C', Day: 'Cloudy' },
+//   { name: 'USA', temp: '25C', Day: 'Rainy' },
+//   { name: 'Dubai', temp: '40C', Day: 'Hot' }
+// ];
+const W_data = Weather_data;
 const Weather_api = () => {
-  const [input, setInput] = useState('');
-  const [isOpen, setIsOpen] = useState(false);
-  const [search, setSearch] = useState([]);
-const filtered = (inputVal) => {
-    setInput(inputVal);
-    if (inputVal.trim() === '') {
-      setSearch([]);
-      setIsOpen(false);
-      return;
+    const [input,setInput] = useState("")
+    const [isOpen,setIsOpen] = useState(false)
+    const [search,setSearch] = useState([])
+
+    useEffect(()=>{
+
+    })
+    const HandleSearch = (input)=>{
+        setInput(input)
+      if (input.trim()===''){
+        setSearch([])
+        setIsOpen(false)
+        return
+      }
+      const filtered = W_data.filter((item)=> 
+        item?.location?.name.toLowerCase().includes(input.toLowerCase())
+    )
+     setSearch(filtered)
+     setIsOpen(true)
     }
-    const filter = w.filter((item) =>
-      item.name.toLowerCase().includes(inputVal.toLowerCase())
-    );
-    setSearch(filter);
-    setIsOpen(true);
-  };
-  return (
-    <div style={{ padding: '1rem', width: '300px' }}>
-      <input
-        type='text'
-        placeholder='Enter location'
-        value={input}
-        onChange={(e) => filtered(e.target.value)}
-        onFocus={() => input && setIsOpen(true)}
-        onBlur={() => setTimeout(() => setIsOpen(false), 150)} // allows click
-      />
-
-      {isOpen && search.length > 0 && (
+    return(
         <div>
-          {search.map((item, index) => (
-            <div key={index}>
-              🌍 <strong>{item.name}</strong> – {item.temp}, {item.Day}
-            </div>
-          ))}
-        </div>
-      )}
-
-      {isOpen && search.length === 0 && input && (
-        <div>
-          ❌ No results found
-        </div>
-      )}
-    </div>
-  );
-};
+            <h1>Weather App</h1>
+            <input type='text' value={input} placeholder='Enter any place'
+            onChange={(e)=>HandleSearch(e.target.value)}
+            onFocus={(e)=>input && setIsOpen(true)}
+            onBlur={() => setTimeout(() => setIsOpen(false), 150)}
+            />
+            {isOpen && search.length > 0 && (
+  <div>
+    {search.map((item, index) => (
+      <div key={index}>
+        {item?.location?.name} {item?.location?.region} {item?.location?.country}
+      </div>
+    ))}
+  </div>
+)}
+   {isOpen && search.length === 0 && input && (
+  <div style={{ color: 'gray' }}>No matching results</div>
+)}
+  </div>
+    )
+}
 
 export default Weather_api;
