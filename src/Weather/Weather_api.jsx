@@ -1,18 +1,15 @@
 import React, { useState } from 'react';
-
 const w = [
   { name: 'London', temp: '32C', Day: 'Sunny' },
   { name: 'India', temp: '30C', Day: 'Cloudy' },
   { name: 'USA', temp: '25C', Day: 'Rainy' },
   { name: 'Dubai', temp: '40C', Day: 'Hot' }
 ];
-
 const Weather_api = () => {
   const [input, setInput] = useState('');
   const [isOpen, setIsOpen] = useState(false);
   const [search, setSearch] = useState([]);
-
-  const filtered = (inputVal) => {
+const filtered = (inputVal) => {
     setInput(inputVal);
     if (inputVal.trim() === '') {
       setSearch([]);
@@ -22,11 +19,9 @@ const Weather_api = () => {
     const filter = w.filter((item) =>
       item.name.toLowerCase().includes(inputVal.toLowerCase())
     );
-
     setSearch(filter);
     setIsOpen(true);
   };
-
   return (
     <div style={{ padding: '1rem', width: '300px' }}>
       <input
