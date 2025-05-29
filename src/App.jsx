@@ -10,7 +10,7 @@ function App() {
       <div>
         <CheckEvenorOdd/>
         <CounterApp/>
-        <Accordance/>
+       <div style={{padding:"10px"}}><Accordance/></div> 
       </div>
     </>
   )
