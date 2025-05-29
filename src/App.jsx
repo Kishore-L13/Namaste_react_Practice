@@ -1,10 +1,8 @@
 
 import './App.css'
+import Accordance from './Project/Accordance'
 import CheckEvenorOdd from './Project/CheckEvenorOdd'
 import CounterApp from './Project/CounterApp'
-import ToggleNav from './Project/ToggleNav'
-import Weather_api from './Weather/Weather_api'
-import { lazy } from 'react'
 function App() {
 
   return (
@@ -12,7 +10,7 @@ function App() {
       <div>
         <CheckEvenorOdd/>
         <CounterApp/>
-        <div><Weather_api/></div>
+        <Accordance/>
       </div>
     </>
   )
