@@ -8,6 +8,7 @@ function ProgressBar() {
     const getBarColor = () => {
         if (progress >= 80) return "green"
         if (progress >=40) return "orange"
+        return "red"
     }
     return (
         <div >
