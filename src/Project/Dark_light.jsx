@@ -3,7 +3,7 @@ import React, { useState } from 'react'
 const Dark_light = () => {
     const [isvisible, setIsvisible] = useState(false)
     const toggle = ()=>{
-        setIsvisible(!isvisible)
+        setIsvisible(prev=!prev)
     }
   return (
     <div style={{backgroundColor:isvisible?"black":"White",color:isvisible?"white":"black",
