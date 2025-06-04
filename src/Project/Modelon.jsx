@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-function Modal() {
+function Modalon() {
   // Step 1: Create a state variable isOpen and setIsOpen using useState
   const [isOpen,setIsOpen] = useState(false)
 
@@ -53,4 +53,4 @@ style={{padding:"10px",cursor:"Pointer"}}
   );
 }
 
-export default Modal;
+export default Modalon;
