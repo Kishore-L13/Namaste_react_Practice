@@ -9,6 +9,7 @@ function App() {
   <User_profile/>
   <Input_focus/>
   <Dark_light/>
+  <Modelon/>
     </>
   )
 }
