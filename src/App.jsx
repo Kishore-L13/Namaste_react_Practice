@@ -5,11 +5,13 @@ import User_profile from './Project/User_profile'
 import Modelon from './Project/Modelon'
 import Tabel from './Project/Tabel'
 import Stopwatch from './Project/Stopwatch'
+import StarRating from './Project/StarRating'
 function App() {
 
   return (
     <>
 <Stopwatch/>
+<StarRating/>
   <Dark_light/>
  <Tabel/>
     </>

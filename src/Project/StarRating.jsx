@@ -20,6 +20,7 @@ const [rating,setRating] = useState(0)
   color:star <=rating ? "gold":"gray",
 }}
           >★</span>
+          //star code {"\u2605"}
 ))}
       </div>
       <p>Current Rating: {rating}</p>
