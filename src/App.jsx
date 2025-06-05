@@ -3,6 +3,7 @@ import Dark_light from './Project/Dark_light'
 import Input_focus from './Project/Input_focus'
 import User_profile from './Project/User_profile'
 import Modelon from './Project/Modelon'
+import Tabel from './Project/Tabel'
 function App() {
 
   return (
@@ -11,6 +12,7 @@ function App() {
   <Input_focus/>
   <Dark_light/>
  <Modelon/>
+ <Tabel/>
     </>
   )
 }
