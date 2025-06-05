@@ -4,14 +4,13 @@ import Input_focus from './Project/Input_focus'
 import User_profile from './Project/User_profile'
 import Modelon from './Project/Modelon'
 import Tabel from './Project/Tabel'
+import Stopwatch from './Project/Stopwatch'
 function App() {
 
   return (
     <>
-  <User_profile/>
-  <Input_focus/>
+<Stopwatch/>
   <Dark_light/>
- <Modelon/>
  <Tabel/>
     </>
   )
