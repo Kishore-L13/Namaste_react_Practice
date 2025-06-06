@@ -6,14 +6,14 @@ import Modelon from './Project/Modelon'
 import Tabel from './Project/Tabel'
 import Stopwatch from './Project/Stopwatch'
 import StarRating from './Project/StarRating'
+import OTP from './Project/OTP'
 function App() {
 
   return (
     <>
-<Stopwatch/>
+    <OTP/>
 <StarRating/>
-  <Dark_light/>
- <Tabel/>
+
     </>
   )
 }
