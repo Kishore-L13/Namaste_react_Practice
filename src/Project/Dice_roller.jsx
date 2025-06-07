@@ -9,7 +9,8 @@ const Roller = ()=>{
   return (
     <div>
         <h1>Roll dice</h1>
-        <button>🎲</button>
+        <button style={{textAlign:"center",padding:"10px"}} onClick={Roller}>Roll Dice</button>
+        <h3>{rolldice!==null?`🎲 ${rolldice}`:"Click to roll"}</h3>
     </div>
   )
 }

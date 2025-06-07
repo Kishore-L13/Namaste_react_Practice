@@ -7,11 +7,13 @@ import Tabel from './Project/Tabel'
 import Stopwatch from './Project/Stopwatch'
 import StarRating from './Project/StarRating'
 import OTP from './Project/OTP'
+import Dice_roller from './Project/Dice_roller'
 function App() {
 
   return (
     <>
     <OTP/>
+    <Dice_roller/>
 <StarRating/>
 
     </>
