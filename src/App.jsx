@@ -2,7 +2,8 @@ import './App.css'
 import OTP from './Project/OTP'
 import Dice_roller from './Project/Dice_roller'
 import Carousel from './Project/Carousel'
-
+import { Languages } from 'lucide-react'
+import "i18next"
 
 function App() {
 
@@ -11,7 +12,6 @@ function App() {
     <OTP/>
     <Dice_roller/>
 <Carousel/>
-
     </>
   )
 }
