@@ -5,7 +5,6 @@ const CheckEvenorOdd = () => {
   const [loading, setLoading] = useState(false)
   const [result,setResult] = useState(null)
   const Check = ()=>{
-   
     setLoading(true)
     setResult(null)
   setTimeout(()=>  {const number = parseInt(input,10)

@@ -4,6 +4,7 @@ import Dice_roller from './Project/Dice_roller'
 import Carousel from './Project/Carousel'
 import { Languages } from 'lucide-react'
 import "i18next"
+import Scoreboard from './Project/Scoreboard'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <OTP/>
     <Dice_roller/>
 <Carousel/>
+<Scoreboard/>
     </>
   )
 }
