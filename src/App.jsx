@@ -5,15 +5,13 @@ import Carousel from './Project/Carousel'
 import { Languages } from 'lucide-react'
 import "i18next"
 import Scoreboard from './Project/Scoreboard'
+import BlogPosts from './Project/BlogPosts'
 
 function App() {
 
   return (
     <>
-    <OTP/>
-    <Dice_roller/>
-<Carousel/>
-<Scoreboard/>
+   <BlogPosts/>
     </>
   )
 }
