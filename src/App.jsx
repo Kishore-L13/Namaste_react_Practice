@@ -1,17 +1,12 @@
 import './App.css'
-import OTP from './Project/OTP'
-import Dice_roller from './Project/Dice_roller'
-import Carousel from './Project/Carousel'
-import { Languages } from 'lucide-react'
 import "i18next"
-import Scoreboard from './Project/Scoreboard'
-import BlogPosts from './Project/BlogPosts'
+import Timer_disable from './Project/Timer_disable'
 
 function App() {
 
   return (
     <>
-   <BlogPosts/>
+  <Timer_disable/>
     </>
   )
 }
