@@ -3,7 +3,6 @@ import React, { useState } from "react";
 export const zigzagJoin = (arr) => {
   return arr.map((str,i)=>(i % 2 === 0 ? str:str.split("").reverse().join(""))).join("")
 }
-
 const ZigzagString = () => {
   const [input, setInput] = useState("");
   const [result, setResult] = useState("");
