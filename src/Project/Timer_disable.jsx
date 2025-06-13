@@ -10,7 +10,7 @@ console.log("btn disable")
         return ()=>{
             clearTimeout(timer)
         }
-    })
+    },[])
   return (
 
     <div>
