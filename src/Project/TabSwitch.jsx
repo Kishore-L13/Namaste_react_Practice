@@ -13,8 +13,14 @@ const TabSwitch = ()=>{
         {tabs.map((tab)=>(
             <button key={tab.id}
             onClick={(e)=>setActiveset(tab.id)}
+            //className={activeTab === tab.id ? "active" : ""}
+           style={{
+  backgroundColor: activeset === tab.id ? 'blue' : ''
+}}
             >{tab.label}</button>
         ))}
+
+<div> {tabs.find((tab)=> tab.id === activeset)?.content}</div>       
         </div>
     )
 }
