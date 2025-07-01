@@ -1,9 +1,17 @@
-import React from "react";
+import React, { useRef } from "react";
 
 const Focus = () => {
+    const input = useRef(null)
+    const handleClick = ()=>{
+        if(input.current){
+            input.current.focus()
+        }
+    }
     return(
         <div>
-            Focus
+        <input  type="text" ref={input}/>
+        <button onClick={handleClick}>Focus</button>
         </div>
     )
 }
+export default Focus
