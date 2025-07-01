@@ -5,6 +5,7 @@ import PreviousCounter from './Project/PreviousCounter'
 import Greeting from './Project/Greeting'
 import Image_Carousel from './Project/Image_Carousel'
 import TabSwitch from './Project/TabSwitch'
+import Color_change from './Interview/Color_change'
 
 function App() {
 
@@ -12,6 +13,7 @@ function App() {
     <>
   <Greeting/>
  <TabSwitch/>
+ <Color_change/>
     </>
   )
 }
