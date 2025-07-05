@@ -12,9 +12,6 @@ const Weather_api = () => {
     const [isOpen,setIsOpen] = useState(false)
     const [search,setSearch] = useState([])
 
-    useEffect(()=>{
-
-    })
     const HandleSearch = (input)=>{
         setInput(input)
       if (input.trim()===''){
