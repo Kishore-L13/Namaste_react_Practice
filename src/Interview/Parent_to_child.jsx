@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const ChildA = ({ count }) => {
   return (
-    <div style={{ border: "1px solid green", padding: "10px" }}>
+    <div>
       <h3>Child A</h3>
       <p>Count from parent: {count}</p>
     </div>
@@ -11,7 +11,7 @@ const ChildA = ({ count }) => {
 
 const ChildB = ({ onIncrement }) => {
   return (
-    <div style={{ border: "1px solid red", padding: "10px" }}>
+    <div>
       <h3>Child B</h3>
       <button onClick={onIncrement}>Increment Count</button>
     </div>
@@ -27,7 +27,7 @@ const Parent = () => {
   };
 
   return (
-    <div style={{ border: "2px solid blue", padding: "15px" }}>
+    <div>
       <h2>Parent Component</h2>
       <p>Current Count in Parent: {count}</p>
 
