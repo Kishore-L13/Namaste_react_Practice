@@ -1,9 +1,16 @@
-import React from 'react'
+// CountContext.js
+import { createContext, useContext, useState } from 'react';
 
-const ContextApi = () => {
+const CountContext = createContext();
+
+export const CountProvider = ({ children }) => {
+  const [count, setCount] = useState(0);
+
   return (
-    <div>ContextApi</div>
-  )
-}
+    <CountContext.Provider value={{ count, setCount }}>
+      {children}
+    </CountContext.Provider>
+  );
+};
 
-export default ContextApi
+export const useCount = () => useContext(CountContext);
