@@ -11,7 +11,7 @@ const [rating,setRating] = useState(0)
       <h1>Star Rating</h1>
       <h3>by NamasteDev</h3>
       <div>
-        {[1, 2, 3, 4, 5].map((star) => (
+        {[1, 2, 3, 4, 5,6,7].map((star) => (
           <span key={star}
           onClick={() => setRating(star)}
           style={{
