@@ -29,7 +29,7 @@ const TodoWithTimer = () => {
           return todo;
         })
       );
-    }, 1000);
+    }, 100);
     return () => clearInterval(interval);
   }, []);
 
