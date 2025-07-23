@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./styles.css";
 
-function ReadMoreToggle() {
+function ReadMore() {
   
   const text = `React is a popular JavaScript library developed by Facebook for 
   building user interfaces, especially single-page applications. It allows
@@ -27,4 +27,4 @@ function ReadMoreToggle() {
   );
 }
 
-export default ReadMoreToggle;
+export default ReadMore;
